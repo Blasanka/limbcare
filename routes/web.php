@@ -203,7 +203,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
 });
 
 Route::group(['prefix' => 'director', 'as' => 'director.', 'namespace' => 'employee\director', 'middleware' => 'director'], function () {
-
     // Dashboard
     Route::get('/', 'DirectorDashboardController@index')->name('dashboard');
     
